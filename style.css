@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: auto; */
 }
 
 body {
@@ -25,10 +26,16 @@ header {
 button {
     background-color: #3882F6;
     color: white;
-    padding: 4px 24px;
+    padding: 4px 32px;
     border-radius: 6px;
     border-style: none;
-    font-size: 12px;
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container {
@@ -48,6 +55,9 @@ button {
     gap: 16px;
     list-style: none;
     padding-top: 16px;
+    font-weight: lighter;
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 .top .container{
@@ -55,23 +65,131 @@ button {
     padding: 90px 0;
 }
 
+.toptitle {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.toptext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.topleft {
+    width: auto;
+    height: 200px;
+    flex: 1;
+}
+
+.topright {
+    width: auto;
+    height: 200px;
+    flex: 1;
+}
+
+.topright img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.topbtn {
+    margin-top: 12px;
+}
+
 .infos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 16px;
-    
+    gap: 16px; 
+    margin: 0 5%;
 }
 
-.info {
-    width : 60vw;
-    flex: auto;
+.infotitle {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    margin: 32px;
+}
+
+.infos .container {
+    margin: 0 15%;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.infotext {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+.infoimage {
+    width: 180px;
+    height: 180px;
+    background-color:white;
+    border: solid #3882F6 4px;
+    border-radius: 5%;
+}
+
+.infotext {
+    width: 180px;
+    text-align: center;
 }
 
 .quote {
     background-color: #E5E7EB;
 }
 
+.quote .container {
+    /* margin: 0 15%; */
+    padding: 112px;
+    
+}
+
+.quotetext {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quoteauthor {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    float: right;
+    padding-right: 32px;
+}
+
+.signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 15%;
+    padding: 40px 120px;
+    background-color: #3882F6;
+    border-radius: 10px;
+}
+
+.signuptext {
+    font-size: 20px;
+    color: white;
+
+}
+
+.signuptext .desc {
+    font-size: 16px;
+    color: #E5E7EB;
+}
+
+.lastbutton {
+    border: solid white 2px;
+}
+
 footer {
+    padding: 32px;
     text-align: center;
 }
